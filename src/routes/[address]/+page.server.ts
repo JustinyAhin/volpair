@@ -31,6 +31,10 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	const volumes: Volumes[] = await data.json();
 
+	if (volumes.length === 0) {
+		throw error(404, 'This contract address does not have any volume data');
+	}
+
 	const refinedVolumes = volumes.map((volume) => {
 		const date = new Date(volume.time);
 		const time = date.toLocaleTimeString();
