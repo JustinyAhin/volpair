@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Volpair</title>
+	<title>Volpair - Ethereum blockchain contract volumes</title>
 	<meta name="description" content="Volumes for a contract address for the Ethereum blockchain" />
 </svelte:head>
 
