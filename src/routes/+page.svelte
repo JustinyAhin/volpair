@@ -24,7 +24,7 @@
 			for <code>0x7efaef62fddcca950418312c6c91aef321375a00</code>, you would go to
 			<a
 				href="{baseUrl}/0x7efaef62fddcca950418312c6c91aef321375a00"
-				class="font-bold hover:underline text-indigo-700 hover:text-indigo-900"
+				class="font-bold text-indigo-700 hover:text-indigo-900 hover:underline"
 				>{baseUrl}/0x7efaef62fddcca950418312c6c91aef321375a00</a
 			>.
 		</p>
