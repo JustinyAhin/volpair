@@ -11,7 +11,7 @@ env:
   APESPACE_API_URL: ${{ secrets.APESPACE_API_URL }}
 
 jobs:
-  test:
+  e2e-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
