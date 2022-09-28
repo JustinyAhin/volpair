@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>Volpair - Ethereum blockchain contract volumes</title>
-	<meta name="description" content="Volumes for a contract address for the Ethereum blockchain" />
+	<meta name="description" content="Ethereum blockchain contract volumes" />
 </svelte:head>
 
 <section class="my-32 space-y-8">
