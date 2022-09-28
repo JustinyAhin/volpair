@@ -38,10 +38,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Cache Playwright binaries
+        uses: actions/cache@v3
+        id: playwright-cache
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: cache-playwright-linux-1.25.0
+
       - name: Install dependencies
         run: pnpm i
 
       - name: Install Chromium browser
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: pnpm playwright install chromium --with-deps
 
       - name: Run Playwright tests
