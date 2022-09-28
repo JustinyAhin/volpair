@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  APESPACE_API_KEY: ${{ secrets.APESPACE_API_KEY }}
+  APESPACE_API_URL: ${{ secrets.APESPACE_API_URL }}
+
 jobs:
   test:
     timeout-minutes: 60
