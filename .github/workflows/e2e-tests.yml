@@ -28,8 +28,8 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
-      - name: Install Playwright Browsers
-        run: pnpm playwright install --with-deps
+      - name: Install Chromium browser
+        run: pnpm playwright install chromium --with-deps
 
       - name: Run Playwright tests
         run: pnpm playwright test
