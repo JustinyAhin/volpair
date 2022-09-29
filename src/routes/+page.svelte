@@ -31,6 +31,51 @@
 	</div>
 
 	<div class="space-y-2">
+		<h2>Invalid contract address</h2>
+		<p>
+			If you enter an invalid contract address, you will be redirected to an error page with a 400
+			status code.
+		</p>
+		<p>
+			Eg: <a
+				href="{baseUrl}/invalid-contract-address-string"
+				class="font-bold text-indigo-700 hover:text-indigo-900 hover:underline"
+				>{baseUrl}/invalid-contract-address-string</a
+			>.
+		</p>
+	</div>
+
+	<div class="space-y-2">
+		<h2>Contract address with empty data</h2>
+		<p>
+			If you enter a contract address that has no data, you will be redirected to an error page with
+			a 404 status code.
+		</p>
+		<p>
+			Eg: <a
+				href="{baseUrl}/0x0000000000000000000000000000000000000000"
+				class="font-bold text-indigo-700 hover:text-indigo-900 hover:underline"
+				>{baseUrl}/0x0000000000000000000000000000000000000000</a
+			>.
+		</p>
+	</div>
+
+	<div>
+		<h2>Non existent route</h2>
+		<p>
+			For any other route that doesn't match the application routes patterns, you will be redirected
+			to a 404 page.
+		</p>
+		<p>
+			Eg: <a
+				href="{baseUrl}/new-route/non-existent-route"
+				class="font-bold text-indigo-700 hover:text-indigo-900 hover:underline"
+				>{baseUrl}/new-route/non-existent-route</a
+			>.
+		</p>
+	</div>
+
+	<div class="space-y-2">
 		<h2>Example of valid contract addresses</h2>
 		<ul class="space-y-1">
 			<li>0x7efaef62fddcca950418312c6c91aef321375a00</li>
